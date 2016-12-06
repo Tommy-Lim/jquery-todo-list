@@ -16,7 +16,7 @@ var addItem = function(){
   if($('#inputBox').val()===""){
     //do nothing
   } else{
-    var divToAdd = $("<div class='entry'><div class='entryText'></div><button class='deleteButton'>Done</button></div>");
+    var divToAdd = $("<div class='entry'><i class='fa fa-arrows-v' aria-hidden='true'></i><div class='entryText'></div><button class='deleteButton'>Done</button></div>");
     var textToAdd = $("#inputBox").val();
     $("#container-entries").prepend(divToAdd);
     $("#container-entries .entryText").first().text(textToAdd);
