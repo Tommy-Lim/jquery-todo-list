@@ -27,5 +27,5 @@ var addItem = function(){
 };
 
 var removeItem = function(event){
-  event.parent().remove();
+  event.parent().fadeOut();
 };
