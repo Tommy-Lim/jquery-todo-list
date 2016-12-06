@@ -12,7 +12,6 @@ $("#container-entries").on("click", ".deleteButton", function(){
   removeItem($(this));
 });
 
-
 var addItem = function(){
   if($('#inputBox').val()===""){
     //do nothing
@@ -29,3 +28,5 @@ var addItem = function(){
 var removeItem = function(event){
   event.parent().fadeOut();
 };
+
+$("#container-entries").sortable();
